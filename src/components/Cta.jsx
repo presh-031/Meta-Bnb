@@ -9,11 +9,11 @@ const Cta = () => {
           Discover our NFT gift cards collection. Loyal customers gets amazing gift cards which are traded as NFTs.
           These NFTs gives our cutomer access to loads of our exclusive services.
         </p>
-        <button className=" bg-[#fff] px-[3.3rem] py-[1.4rem] text-[1.6rem] font-normal leading-[1.92rem] text-[#A02279] ">
+        <button className="rounded-[0.8rem] bg-[#fff] px-[3.3rem] py-[1.4rem] text-[1.6rem] font-normal leading-[1.92rem] text-[#A02279] ">
           Learn more
         </button>
       </div>
-      <div className="mt-[6rem] outline">
+      <div className="mt-[6rem]">
         <img src={ctaImage} alt="cta-img" />
       </div>
     </section>

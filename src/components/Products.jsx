@@ -15,7 +15,7 @@ const Products = () => {
       <p className="my-[2rem]  text-[4.8rem] font-bold leading-[5.995rem] text-[#000]">
         Inspiration for your next adventure
       </p>
-      <div className="grid grid-cols-1 border border-red-800">
+      <div className="grid grid-cols-1 gap-[2.4rem] ">
         <PlaceCard product={product1} />
         <PlaceCard product={product2} />
         <PlaceCard product={product3} />

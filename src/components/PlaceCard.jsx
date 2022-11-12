@@ -7,11 +7,11 @@ const PlaceCard = ({ product }) => {
       <div>
         <img src={product} alt="" />
       </div>
-      <p className="mt-[1.6rem] mb-[1rem] flex justify-between outline">
+      <p className="mt-[1.6rem] mb-[1rem] flex justify-between">
         <span>Desert king</span>
         <span>1MBT per night</span>
       </p>
-      <p className="mb-[0.9rem] flex justify-between outline">
+      <p className="mb-[0.9rem] flex justify-between">
         <span>2345km away</span>
         <span>available for 2weeks stay</span>
       </p>
