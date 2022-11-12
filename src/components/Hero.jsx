@@ -8,14 +8,11 @@ import metamask from "../assets/metamask.svg";
 import opensea from "../assets/opensea.svg";
 const Hero = () => {
   return (
-    <section className="px-[2rem]">
-      <div>
+    <section className="">
+      <div className="mx-[2rem]">
         <p className="mb-[3.8rem] text-[4.6rem] font-bold leading-[6.84rem] text-[#434343]">
           Rent a{" "}
           <span
-            //   className="
-            // // text-transparent bg-clip-text bg-gradient-to-b to-[#FFC089] from-[#A02279]
-            // "
             className="text-[#A02279]
             "
           >
@@ -39,7 +36,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div className="mt-[2rem] flex gap-[2rem]">
+      <div className="mx-[2rem] mt-[2rem] flex gap-[2rem]">
         <div className="mt-[4rem] flex flex-col gap-[2rem]">
           <div>
             <img src={heroImg1} alt="nft" />

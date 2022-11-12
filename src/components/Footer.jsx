@@ -1,38 +1,42 @@
+import logoWhite from "../assets/footer/logo-white.svg";
+import fb from "../assets/footer/fb.svg";
+import insta from "../assets/footer/insta.svg";
+import twitter from "../assets/footer/twitter.svg";
+
 const Footer = () => {
   return (
-    <footer className="bg-[#1D1D1E] px-[2rem] pt-[6.3rem] pb-[3.7rem]">
+    <footer className="bg-[#1D1D1E] px-[2rem] pt-[6.3rem] pb-[3.7rem]  text-[1,4rem] font-normal leading-[3.5rem] text-[#F1F3F9]">
       <div>
-        <div>
-          <img src="" alt="" />
-          <img src="" alt="" />
+        <div className="mb-[9.6rem] outline">
+          <img className="h-[3rem] w-[15rem]" src={logoWhite} alt="logo" />
         </div>
-        <div>
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+        <div className="mt-[5.5rem] flex gap-[3rem]">
+          <img src={fb} alt="facebook" />
+          <img src={insta} alt="instagram" />
+          <img src={twitter} alt="twitter" />
         </div>
-        <p></p>
+        <p className="text-[1.6rem] font-normal leading-[1.6rem] text-[#f7f7f7]">&#169; 2022 Metabnb</p>
       </div>
       <div>
-        <p className="text-white">Community</p>
-        <p className="text-[#F1F3F9]">NFT</p>
-        <p className="text-[#F1F3F9]">Tokens</p>
-        <p className="text-[#F1F3F9]">Landlords</p>
-        <p className="text-[#F1F3F9]">Discord</p>
+        <p className="text-[1.8rem] font-bold leading-[2.248rem] text-white">Community</p>
+        <p className="">NFT</p>
+        <p className="">Tokens</p>
+        <p className="">Landlords</p>
+        <p className="">Discord</p>
       </div>
       <div>
-        <p className="text-white">Places</p>
-        <p className="text-[#F1F3F9]">Castle</p>
-        <p className="text-[#F1F3F9]">Farms</p>
-        <p className="text-[#F1F3F9]">Beach</p>
-        <p className="text-[#F1F3F9]">Learn more</p>
+        <p className="text-[1.8rem] font-bold leading-[2.248rem] text-white">Places</p>
+        <p className="">Castle</p>
+        <p className="">Farms</p>
+        <p className="">Beach</p>
+        <p className="">Learn more</p>
       </div>
       <div>
-        <p className="text-white">About us</p>
-        <p className="text-[#F1F3F9]">Road map</p>
-        <p className="text-[#F1F3F9]">Creators</p>
-        <p className="text-[#F1F3F9]">Career</p>
-        <p className="text-[#F1F3F9]">Contact us</p>
+        <p className="text-[1.8rem] font-bold leading-[2.248rem] text-white">About us</p>
+        <p className="">Road map</p>
+        <p className="">Creators</p>
+        <p className="">Career</p>
+        <p className="">Contact us</p>
       </div>
     </footer>
   );
