@@ -11,11 +11,11 @@ import product8 from "../assets/products/product8.svg";
 
 const Products = () => {
   return (
-    <div className="px-[2rem]  text-center">
-      <p className="font-bold  my-[2rem] text-[2rem] leading-[1.95rem] text-[#000]">
+    <div className="p-[2rem]  text-center">
+      <p className="my-[2rem]  text-[4.8rem] font-bold leading-[5.995rem] text-[#000]">
         Inspiration for your next adventure
       </p>
-      <div className="border border-red-800 grid grid-cols-1">
+      <div className="grid grid-cols-1 border border-red-800">
         <PlaceCard product={product1} />
         <PlaceCard product={product2} />
         <PlaceCard product={product3} />

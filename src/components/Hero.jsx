@@ -5,9 +5,9 @@ import heroImg4 from "../assets/hero-img4.svg";
 
 const Hero = () => {
   return (
-    <section className="outline px-[2rem]">
+    <section className="px-[2rem] outline">
       <div>
-        <p className="mb-[1.8rem] text-[#434343] font-bold text-[2rem] leading-[2rem]">
+        <p className="mb-[3.8rem] text-[4.6rem] font-bold leading-[6.84rem] text-[#434343]">
           Rent a{" "}
           <span
             //   className="
@@ -21,21 +21,23 @@ const Hero = () => {
           away from <span className="text-[#A02279]">Home</span> in the{" "}
           <span className="text-[#A02279]">Metaverse</span>
         </p>
-        <p className="text-[#434343] mb-[1.8rem]">
+        <p className="mb-[2.8rem] text-[2rem] font-normal leading-[3rem] text-[#434343]">
           we provide you access to luxury and affordable houses in the metaverse, get a chance to turn your imagination
           to reality at your comfort zone
         </p>
-        <div className="flex">
+        <div className="">
           <input
             type="text"
-            className="border-[#A3A3A3] px-[1.5rem] border-r-0 py-[0.7rem] border-[1px] border-solid"
+            className="mb-[1rem] block h-[4.90rem] w-[100%] rounded-[0.80rem] border-[1px] border-r-0 border-solid border-[#A3A3A3] px-[1.5rem] text-[1.4rem] font-normal leading-[1.82rem] outline-none placeholder:text-[#B8B8B8]"
             placeholder="Search for location"
           />
-          <button className="bg-[#A02279] text-[#fff] px-[2.7rem] py-[0.7rem]">Search</button>
+          <button className="h-[4.90rem] rounded-[0.8rem] bg-[#A02279] px-[6.97rem] text-[1.6rem] font-normal leading-[1.93rem] text-[#fff] ">
+            Search
+          </button>
         </div>
       </div>
-      <div className="flex gap-[2rem] mt-[2rem]">
-        <div className="flex flex-col gap-[2rem] mt-[4rem]">
+      <div className="mt-[2rem] flex gap-[2rem]">
+        <div className="mt-[4rem] flex flex-col gap-[2rem]">
           <div>
             <img src={heroImg1} alt="nft" />
           </div>
@@ -52,6 +54,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <div></div>
     </section>
   );
 };
