@@ -1,13 +1,11 @@
 import star from "../assets/star.svg";
-import heart from "../assets/heart.svg";
-const PlaceCard = () => {
+// import heart from "../assets/heart.svg";
+
+const PlaceCard = ({ product }) => {
   return (
     <div>
       <div>
-        <img src="" alt="" />
-        <div>
-          <img src={heart} alt="heart" />
-        </div>
+        <img src={product} alt="" />
       </div>
       <p>
         <span>Desert king</span>
