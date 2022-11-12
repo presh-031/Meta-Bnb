@@ -33,12 +33,24 @@ const Header = () => {
           </button>
         </div>
       </header>
-      <div className="outline">
-        <p>Home</p>
-        <p>Place to stay</p>
-        <p>NFTs</p>
-        <p>Community</p>
-      </div>
+      {isOpen && (
+        <div className="">
+          <div className="absolute  right-[2rem] top-[8rem] z-10 w-[20rem] overflow-hidden  rounded-[1rem]  bg-white">
+            <p className="border-b-solid font-400 border-b-[1px] border-b-gray-300  p-[1.5rem] text-[1.8rem]">Home</p>
+            <p className="border-b-solid font-400 border-b-[1px] border-b-gray-300  p-[1.5rem] text-[1.8rem]">
+              Place to stay
+            </p>
+            <p className="border-b-solid font-400 border-b-[1px] border-b-gray-300  p-[1.5rem] text-[1.8rem]">NFTs</p>
+            <p className="border-b-solid font-400 border-b-[1px] border-b-gray-300  p-[1.5rem] text-[1.8rem]">
+              Community
+            </p>
+          </div>
+          <div
+            onClick={handleMenuClick}
+            className="modal absolute top-0 h-[100vh] w-[100%] bg-black bg-opacity-20 outline"
+          ></div>
+        </div>
+      )}
     </>
   );
 };
