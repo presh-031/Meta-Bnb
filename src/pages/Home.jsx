@@ -6,8 +6,10 @@ import Products from "../components/Products";
 
 const Home = () => {
   return (
-    <div>
-      <Header />
+    <div className="pt-[12rem]">
+      <div className="fixed top-0 right-0 left-0 outline">
+        <Header />
+      </div>
       <Hero />
       <Products />
       <Cta />

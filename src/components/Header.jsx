@@ -3,10 +3,10 @@ import homeLogo from "../assets/home-logo.svg";
 
 const Header = () => {
   return (
-    <header className="border border-red-800 flex px-[2rem] py-[4rem] mb-[2.5rem]">
-      <div className="flex gap-[0.3rem] items-end">
-        <img src={homeLogo} alt="logo" className="outline w-[4.199rem] h-[3.6rem]" />
-        <img src={logo} alt="logo" className="outline w-[18.8rem] h-[3.2rem]" />
+    <header className="mb-[2.5rem] flex w-[100%] items-center justify-between border border-red-800 bg-white px-[2rem] py-[2rem]">
+      <div className="flex items-end gap-[0.3rem]">
+        <img src={homeLogo} alt="logo" className="h-[2.6rem] w-[3.199rem]" />
+        <img src={logo} alt="logo" className="h-[2.2rem] w-[10.8rem]" />
       </div>
       <ul className="hidden">
         <li>Home</li>
@@ -14,8 +14,13 @@ const Header = () => {
         <li>NFTs</li>
         <li>Community</li>
       </ul>
-      <div className="hidden">
-        <button>Connect wallet</button>
+
+      <div>
+        <img src="" alt="" />
+
+        <button className="w-[8rem] bg-[#A02279] py-2 text-[1.6rem] font-normal leading-[1.4rem] text-[#fff] outline">
+          Connect wallet
+        </button>
       </div>
     </header>
   );
