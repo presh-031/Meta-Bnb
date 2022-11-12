@@ -5,7 +5,7 @@ import heroImg4 from "../assets/hero-img4.svg";
 
 const Hero = () => {
   return (
-    <section className="outline px-[2rem] pr-[2rem]">
+    <section className="outline px-[2rem]">
       <div>
         <p className="mb-[1.8rem] text-[#434343] font-bold text-[2rem] leading-[2rem]">
           Rent a{" "}
@@ -34,18 +34,22 @@ const Hero = () => {
           <button className="bg-[#A02279] text-[#fff] px-[2.7rem] py-[0.7rem]">Search</button>
         </div>
       </div>
-      <div>
-        <div>
-          <img src={heroImg1} alt="nft" />
+      <div className="flex gap-[2rem] mt-[2rem]">
+        <div className="flex flex-col gap-[2rem] mt-[4rem]">
+          <div>
+            <img src={heroImg1} alt="nft" />
+          </div>
+          <div>
+            <img src={heroImg2} alt="nft" />
+          </div>
         </div>
-        <div>
-          <img src={heroImg2} alt="nft" />
-        </div>
-        <div>
-          <img src={heroImg3} alt="nft" />
-        </div>
-        <div>
-          <img src={heroImg4} alt="nft" />
+        <div className="flex flex-col gap-[2rem]">
+          <div>
+            <img src={heroImg3} alt="nft" />
+          </div>
+          <div>
+            <img src={heroImg4} alt="nft" />
+          </div>
         </div>
       </div>
     </section>
