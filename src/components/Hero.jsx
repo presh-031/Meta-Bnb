@@ -3,9 +3,12 @@ import heroImg2 from "../assets/hero-img2.svg";
 import heroImg3 from "../assets/hero-img3.svg";
 import heroImg4 from "../assets/hero-img4.svg";
 
+import mbtoken from "../assets/mbtoken.svg";
+import metamask from "../assets/metamask.svg";
+import opensea from "../assets/opensea.svg";
 const Hero = () => {
   return (
-    <section className="px-[2rem] outline">
+    <section className="px-[2rem]">
       <div>
         <p className="mb-[3.8rem] text-[4.6rem] font-bold leading-[6.84rem] text-[#434343]">
           Rent a{" "}
@@ -28,7 +31,7 @@ const Hero = () => {
         <div className="">
           <input
             type="text"
-            className="mb-[1rem] block h-[4.90rem] w-[100%] rounded-[0.80rem] border-[1px] border-r-0 border-solid border-[#A3A3A3] px-[1.5rem] text-[1.4rem] font-normal leading-[1.82rem] outline-none placeholder:text-[#B8B8B8]"
+            className="mb-[1rem] block h-[4.90rem] w-[100%] rounded-[0.80rem] border-[1px]  border-solid border-[#A3A3A3] px-[1.5rem] text-[1.4rem] font-normal leading-[1.82rem] outline-none placeholder:text-[#B8B8B8]"
             placeholder="Search for location"
           />
           <button className="h-[4.90rem] rounded-[0.8rem] bg-[#A02279] px-[6.97rem] text-[1.6rem] font-normal leading-[1.93rem] text-[#fff] ">
@@ -54,7 +57,11 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div></div>
+      <div className="mt-[8rem] flex flex-col items-center gap-[2rem] bg-[#A02279] py-[4rem]">
+        <img src={mbtoken} alt="mbtoken" className=" w-[15rem]" />
+        <img src={metamask} alt="metamask" className=" w-[15rem]" />
+        <img src={opensea} alt="opensea" className=" w-[15rem]" />
+      </div>
     </section>
   );
 };
