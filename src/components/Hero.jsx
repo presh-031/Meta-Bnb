@@ -9,7 +9,7 @@ import opensea from "../assets/opensea.svg";
 const Hero = () => {
   return (
     <>
-      <section className="outline xl:mx-[10rem] xl:flex xl:justify-between">
+      <section className="outline outline xl:mx-[10rem] xl:flex xl:justify-between">
         <div className="mx-[2rem] outline xl:mx-0 xl:w-[64.6rem]">
           <p className="mb-[3.8rem] text-[4.6rem] font-normal leading-[6.84rem] text-[#434343] xl:mb-[4.8rem] xl:text-[5.6rem] xl:leading-[7.84rem]">
             Rent a{" "}
@@ -38,8 +38,8 @@ const Hero = () => {
           </div>
         </div>
         {/* xl:mt-0, then adjust header and header's mb */}
-        <div className="mx-[2rem] mt-[2rem] flex gap-[2rem] border-[5px] border-red-800 xl:mx-0">
-          <div className="mt-[4rem] flex flex-col gap-[2rem]">
+        <div className="mx-[2rem] mt-[2rem] flex gap-[2rem] border-[5px] border-red-800 xl:mx-0 xl:gap-[.8rem]">
+          <div className="mt-[4rem] flex flex-col gap-[2rem] xl:mt-[9.9rem] xl:gap-[.8rem] ">
             <div>
               <img src={heroImg1} alt="nft" />
             </div>
@@ -47,7 +47,7 @@ const Hero = () => {
               <img src={heroImg2} alt="nft" />
             </div>
           </div>
-          <div className="flex flex-col gap-[2rem]">
+          <div className="flex flex-col gap-[2rem] outline xl:gap-[.8rem]">
             <div>
               <img src={heroImg3} alt="nft" />
             </div>
@@ -57,10 +57,10 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      <div className="mt-[8rem] flex flex-col items-center gap-[2rem] bg-[#A02279] py-[4rem]">
-        <img src={mbtoken} alt="mbtoken" className=" w-[15rem]" />
-        <img src={metamask} alt="metamask" className=" w-[15rem]" />
-        <img src={opensea} alt="opensea" className=" w-[15rem]" />
+      <div className="mt-[8rem] flex flex-col items-center gap-[2rem] bg-[#A02279] py-[4rem] xl:mt-[6.7rem] xl:flex-row xl:justify-between xl:py-[1.5rem] xl:px-[13.88rem]">
+        <img src={mbtoken} alt="mbtoken" className=" w-[15rem] xl:w-[20rem]" />
+        <img src={metamask} alt="metamask" className=" w-[15rem] xl:w-[20rem]" />
+        <img src={opensea} alt="opensea" className=" w-[15rem] xl:w-[20rem]" />
       </div>
     </>
   );
