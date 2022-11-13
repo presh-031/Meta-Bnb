@@ -3,10 +3,13 @@ import { HiOutlineMenu } from "react-icons/hi";
 import logo from "../assets/logo.svg";
 import homeLogo from "../assets/home-logo.svg";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [connectWalletIsOpen, setConnectWalletIsOpen] = useState(false);
+
+  const navigate = useNavigate();
 
   const handleMenuClick = () => {
     setIsOpen((prevIsOpen) => {
@@ -47,7 +50,12 @@ const Header = () => {
         <div className="">
           <div className="absolute  right-[2rem] top-[8rem] z-10 w-[20rem] overflow-hidden  rounded-[1rem]  bg-white">
             <p className="border-b-solid font-400 border-b-[1px] border-b-gray-300  p-[1.5rem] text-[1.8rem]">Home</p>
-            <p className="border-b-solid font-400 border-b-[1px] border-b-gray-300  p-[1.5rem] text-[1.8rem]">
+            <p
+              onClick={() => {
+                navigate("/places");
+              }}
+              className="border-b-solid font-400 border-b-[1px] border-b-gray-300 p-[1.5rem]  text-[1.8rem]"
+            >
               Place to stay
             </p>
             <p className="border-b-solid font-400 border-b-[1px] border-b-gray-300  p-[1.5rem] text-[1.8rem]">NFTs</p>

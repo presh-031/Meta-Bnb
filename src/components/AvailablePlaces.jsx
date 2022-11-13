@@ -16,10 +16,11 @@ import place15 from "../assets/places/place15.svg";
 import place16 from "../assets/places/place16.svg";
 
 import PlaceCard from "./PlaceCard";
+import CardsContainer from "../UI/CardsContainer";
 
 const AvailablePlaces = () => {
   return (
-    <div>
+    <CardsContainer>
       <PlaceCard product={place1} />
       <PlaceCard product={place2} />
       <PlaceCard product={place3} />
@@ -36,7 +37,7 @@ const AvailablePlaces = () => {
       <PlaceCard product={place14} />
       <PlaceCard product={place15} />
       <PlaceCard product={place16} />
-    </div>
+    </CardsContainer>
   );
 };
 

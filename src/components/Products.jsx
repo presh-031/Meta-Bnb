@@ -8,6 +8,7 @@ import product5 from "../assets/products/product5.svg";
 import product6 from "../assets/products/product6.svg";
 import product7 from "../assets/products/product7.svg";
 import product8 from "../assets/products/product8.svg";
+import CardsContainer from "../UI/CardsContainer";
 
 const Products = () => {
   return (
@@ -15,7 +16,7 @@ const Products = () => {
       <p className="my-[2rem]  text-[4.8rem] font-bold leading-[5.995rem] text-[#000]">
         Inspiration for your next adventure
       </p>
-      <div className="grid grid-cols-1 gap-[2.4rem] ">
+      <CardsContainer>
         <PlaceCard product={product1} />
         <PlaceCard product={product2} />
         <PlaceCard product={product3} />
@@ -24,7 +25,7 @@ const Products = () => {
         <PlaceCard product={product6} />
         <PlaceCard product={product7} />
         <PlaceCard product={product8} />
-      </div>
+      </CardsContainer>
     </div>
   );
 };

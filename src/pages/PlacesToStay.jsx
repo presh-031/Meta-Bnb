@@ -6,7 +6,6 @@ import Header from "../components/Header";
 const PlacesToStay = () => {
   return (
     <div>
-      <Header />
       <FilterArea />
       <AvailablePlaces />
       <Footer />
