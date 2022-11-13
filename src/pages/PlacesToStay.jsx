@@ -5,10 +5,9 @@ import Header from "../components/Header";
 
 const PlacesToStay = () => {
   return (
-    <div>
+    <div className="pt-[12rem]">
       <FilterArea />
       <AvailablePlaces />
-      <Footer />
     </div>
   );
 };

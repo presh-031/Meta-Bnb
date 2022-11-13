@@ -16,28 +16,31 @@ import place15 from "../assets/places/place15.svg";
 import place16 from "../assets/places/place16.svg";
 
 import PlaceCard from "./PlaceCard";
+
 import CardsContainer from "../UI/CardsContainer";
 
 const AvailablePlaces = () => {
   return (
-    <CardsContainer>
-      <PlaceCard product={place1} />
-      <PlaceCard product={place2} />
-      <PlaceCard product={place3} />
-      <PlaceCard product={place4} />
-      <PlaceCard product={place5} />
-      <PlaceCard product={place6} />
-      <PlaceCard product={place7} />
-      <PlaceCard product={place8} />
-      <PlaceCard product={place9} />
-      <PlaceCard product={place10} />
-      <PlaceCard product={place11} />
-      <PlaceCard product={place12} />
-      <PlaceCard product={place13} />
-      <PlaceCard product={place14} />
-      <PlaceCard product={place15} />
-      <PlaceCard product={place16} />
-    </CardsContainer>
+    <div className="mb-[9.2rem] mt-[6.4rem] border border-red-800">
+      <CardsContainer>
+        <PlaceCard product={place1} />
+        <PlaceCard product={place2} />
+        <PlaceCard product={place3} />
+        <PlaceCard product={place4} />
+        <PlaceCard product={place5} />
+        <PlaceCard product={place6} />
+        <PlaceCard product={place7} />
+        <PlaceCard product={place8} />
+        <PlaceCard product={place9} />
+        <PlaceCard product={place10} />
+        <PlaceCard product={place11} />
+        <PlaceCard product={place12} />
+        <PlaceCard product={place13} />
+        <PlaceCard product={place14} />
+        <PlaceCard product={place15} />
+        <PlaceCard product={place16} />
+      </CardsContainer>
+    </div>
   );
 };
 
