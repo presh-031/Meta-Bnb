@@ -5,12 +5,12 @@ import twitter from "../assets/footer/twitter.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1D1D1E] px-[2rem] pt-[6.3rem] pb-[3.7rem]  text-[1.4rem] font-normal leading-[3.5rem] text-[#F1F3F9]">
+    <footer className="bg-[#1D1D1E] px-[2rem] pt-[6.3rem] pb-[3.7rem] text-[1.4rem] font-normal leading-[3.5rem] text-[#F1F3F9] xl:flex  xl:justify-between xl:px-[12rem] xl:pt-[6.3rem] xl:pb-[3.7rem]">
       <div>
-        <div className="mb-[9.6rem]">
-          <img className="h-[3rem] w-[15rem]" src={logoWhite} alt="logo" />
+        <div className="mb-[9.6rem] outline">
+          <img className="h-[3rem] w-[15rem] xl:h-[4rem] xl:w-[23.3rem]" src={logoWhite} alt="logo" />
         </div>
-        <div className="mt-[5.5rem] mb-[5.90rem] flex gap-[3rem]">
+        <div className="mt-[5.5rem] mb-[5.90rem] flex gap-[3rem] outline ">
           <img src={fb} alt="facebook" />
           <img src={insta} alt="instagram" />
           <img src={twitter} alt="twitter" />
