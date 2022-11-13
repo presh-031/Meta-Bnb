@@ -29,23 +29,23 @@ const Header = () => {
   };
   return (
     <>
-      <header className="mb-[2.5rem] flex w-[100%] items-center justify-between bg-white  px-[1rem] py-[2rem] shadow-md">
+      <header className="xl-shadow-none mb-[2.5rem] flex w-[100%] items-center justify-between bg-white px-[1rem] py-[2rem] shadow-md outline xl:px-[10rem] xl:py-[4.3rem]">
         <div className="flex items-end gap-[0.3rem]">
           <img src={homeLogo} alt="logo" className="h-[2.6rem] w-[3.199rem]" />
           <img src={logo} alt="logo" className="h-[2.2rem] w-[10.8rem]" />
         </div>
-        <ul className="hidden">
+        <ul className="hidden gap-[4.8rem] text-[1.2rem] outline sm:flex xl:text-[2rem]  xl:font-normal xl:leading-[2.498rem]">
           <li>Home</li>
           <li>Place to stay</li>
           <li>NFTs</li>
           <li>Community</li>
         </ul>
 
-        <div className="flex items-center gap-[1rem]">
-          <HiOutlineMenu className="cursor-pointer" size={24} color="#434343" onClick={handleMenuClick} />
+        <div className="flex items-center gap-[1rem] outline">
+          <HiOutlineMenu className="cursor-pointer  sm:hidden" size={24} color="#434343" onClick={handleMenuClick} />
           <button
             onClick={handleConnectWalletBtnClick}
-            className="w-[8rem] rounded-[1rem] bg-[#A02279] py-2 text-[1.6rem] font-normal leading-[1.4rem] text-[#fff] outline"
+            className="w-[8rem] rounded-[1rem] bg-[#A02279] py-2 text-[1.6rem] font-normal leading-[1.4rem] text-[#fff] outline xl:w-[17.7rem] xl:py-[1.5rem] xl:leading-[1.998rem]"
           >
             Connect wallet
           </button>
@@ -86,7 +86,7 @@ const Header = () => {
 
       {connectWalletIsOpen && (
         <div className="absolute top-0 w-[100%]">
-          <div className="absolute top-[50%] left-[50%] z-10 w-[80%] translate-x-[-50%] translate-y-[50%]  overflow-hidden rounded-[1rem]   bg-white">
+          <div className="absolute top-[50%] left-[50%] z-10 w-[80%] translate-x-[-50%] translate-y-[50%] overflow-hidden  rounded-[1rem] bg-white">
             <div className="flex items-center justify-between border-b-[1px] border-b-[#cfd8dc] px-[2rem] py-[1.8rem] ">
               <p className="text-[2rem] font-bold leading-[2.998rem]">Connect Wallet</p>
               <img
