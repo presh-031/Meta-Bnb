@@ -6,7 +6,7 @@ import Products from "../components/Products";
 
 const Home = () => {
   return (
-    <div className="pt-[12rem]">
+    <div className="pt-[13.4rem]">
       <Hero />
       <Products />
       <Cta />

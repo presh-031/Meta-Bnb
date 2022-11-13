@@ -29,14 +29,26 @@ const Header = () => {
   };
   return (
     <>
-      <header className="xl-shadow-none mb-[2.5rem] flex w-[100%] items-center justify-between bg-white px-[1rem] py-[2rem] shadow-md outline xl:px-[10rem] xl:py-[4.3rem]">
-        <div className="flex items-end gap-[0.3rem]">
+      <header className="xl-shadow-none mb-[2.5rem] flex w-[100%] items-center justify-between bg-white px-[1rem] py-[2rem] shadow-md outline  xl:px-[10rem] xl:py-[4.3rem]">
+        <div className="flex items-end gap-[0.3rem] outline">
           <img src={homeLogo} alt="logo" className="h-[2.6rem] w-[3.199rem]" />
           <img src={logo} alt="logo" className="h-[2.2rem] w-[10.8rem]" />
         </div>
         <ul className="hidden gap-[4.8rem] text-[1.2rem] outline sm:flex xl:text-[2rem]  xl:font-normal xl:leading-[2.498rem]">
-          <li>Home</li>
-          <li>Place to stay</li>
+          <li
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+            Home
+          </li>
+          <li
+            onClick={() => {
+              navigate("/places");
+            }}
+          >
+            Place to stay
+          </li>
           <li>NFTs</li>
           <li>Community</li>
         </ul>

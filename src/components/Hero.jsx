@@ -9,9 +9,9 @@ import opensea from "../assets/opensea.svg";
 const Hero = () => {
   return (
     <>
-      <section className="outline outline xl:mx-[10rem] xl:flex xl:justify-between">
+      <section className=" outline xl:mx-[10rem]  xl:mt-[8.2rem] xl:flex xl:justify-between">
         <div className="mx-[2rem] outline xl:mx-0 xl:w-[64.6rem]">
-          <p className="mb-[3.8rem] text-[4.6rem] font-normal leading-[6.84rem] text-[#434343] xl:mb-[4.8rem] xl:text-[5.6rem] xl:leading-[7.84rem]">
+          <p className="mb-[3.8rem] text-[4.6rem] font-normal leading-[6.84rem] text-[#434343] outline xl:mb-[4.8rem] xl:text-[5.6rem] xl:leading-[7.84rem]">
             Rent a{" "}
             <span
               className="font-bold text-[#A02279]
