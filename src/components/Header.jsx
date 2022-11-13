@@ -86,12 +86,14 @@ const Header = () => {
 
       {connectWalletIsOpen && (
         <div className="absolute top-0 w-[100%]">
-          <div className="absolute top-[50%] left-[50%] z-10 w-[80%] translate-x-[-50%] translate-y-[50%]  overflow-hidden rounded-[1rem] border  border-red-800  bg-white">
-            <div className="flex items-center justify-between px-[2rem] py-[1.8rem] outline ">
+          <div className="absolute top-[50%] left-[50%] z-10 w-[80%] translate-x-[-50%] translate-y-[50%]  overflow-hidden rounded-[1rem]   bg-white">
+            <div className="flex items-center justify-between border-b-[1px] border-b-[#cfd8dc] px-[2rem] py-[1.8rem] ">
               <p className="text-[2rem] font-bold leading-[2.998rem]">Connect Wallet</p>
               <img
-                onClick={setConnectWalletIsOpen(false)}
-                className="h-[3.2rem] w-[3.2rem] outline"
+                onClick={() => {
+                  setConnectWalletIsOpen(false);
+                }}
+                className="h-[3.2rem] w-[3.2rem] cursor-pointer"
                 src={close}
                 alt="close"
               />
@@ -100,17 +102,17 @@ const Header = () => {
               <p className="mx-[2rem] mt-[2rem] mb-[1.8rem] text-[1.6rem] leading-[1.998rem] text-[#333333]">
                 Choose your preferred wallet
               </p>
-              <div className="mx-[2rem] flex items-center justify-between outline">
+              <div className="mx-[2rem] flex cursor-pointer items-center justify-between rounded-[1.2rem] border-[1px] border-[#cfd8dc] bg-[#F8F9FA] p-[1.2rem]">
                 <div className="flex items-center gap-[1.6rem]">
-                  <img src={metamask} alt="metamask" />
-                  <p>Metamask</p>
+                  <img src={metamask} alt="metamask" className="w-[1.8rem]" />
+                  <p className="font-sora text-[1.80rem] font-semibold ">Metamask</p>
                 </div>
                 <img src={arrow} alt="arrow" />
               </div>
-              <div className="mx-[2rem] flex items-center justify-between outline">
+              <div className="mx-[2rem] mt-[1.6rem] mb-[3.2rem] flex cursor-pointer items-center  justify-between rounded-[1.2rem] border-[1px] border-[#cfd8dc] bg-[#F8F9FA] p-[1.2rem]">
                 <div className="flex items-center gap-[1.6rem]">
-                  <img src={walletconnect} alt="walletconnect" />
-                  <p>WalletConnect</p>
+                  <img src={walletconnect} alt="walletconnect" className="w-[1.8rem]" />
+                  <p className="font-sora text-[1.80rem] font-semibold ">WalletConnect</p>
                 </div>
                 <img src={arrow} alt="arrow" />
               </div>
