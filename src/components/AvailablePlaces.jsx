@@ -21,7 +21,7 @@ import CardsContainer from "../UI/CardsContainer";
 
 const AvailablePlaces = () => {
   return (
-    <div className="mb-[9.2rem] mt-[6.4rem] border border-red-800">
+    <div className="mt-[6.4rem] mb-[9.2rem]">
       <CardsContainer>
         <PlaceCard product={place1} />
         <PlaceCard product={place2} />

@@ -5,6 +5,11 @@ import homeLogo from "../assets/home-logo.svg";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+import close from "../assets/close.svg";
+import arrow from "../assets/arrow.svg";
+import metamask from "../assets/metamasklogo.svg";
+import walletconnect from "../assets/walletconnect.svg";
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [connectWalletIsOpen, setConnectWalletIsOpen] = useState(false);
@@ -49,10 +54,19 @@ const Header = () => {
       {isOpen && (
         <div className="">
           <div className="absolute  right-[2rem] top-[8rem] z-10 w-[20rem] overflow-hidden  rounded-[1rem]  bg-white">
-            <p className="border-b-solid font-400 border-b-[1px] border-b-gray-300  p-[1.5rem] text-[1.8rem]">Home</p>
+            <p
+              onClick={() => {
+                navigate("/");
+                setIsOpen(false);
+              }}
+              className="border-b-solid font-400 border-b-[1px] border-b-gray-300  p-[1.5rem] text-[1.8rem]"
+            >
+              Home
+            </p>
             <p
               onClick={() => {
                 navigate("/places");
+                setIsOpen(false);
               }}
               className="border-b-solid font-400 border-b-[1px] border-b-gray-300 p-[1.5rem]  text-[1.8rem]"
             >
@@ -71,20 +85,29 @@ const Header = () => {
       )}
 
       {connectWalletIsOpen && (
-        <div className="">
-          <div className="absolute top-[50%] left-[50%] z-10 w-[20rem]  translate-x-[-50%] translate-y-[-50%] overflow-hidden  rounded-[1rem]  bg-white">
-            <p className="border-b-solid font-400 border-b-[1px] border-b-gray-300  p-[1.5rem] text-[1.8rem]">Home</p>
-            <p className="border-b-solid font-400 border-b-[1px] border-b-gray-300  p-[1.5rem] text-[1.8rem]">
-              Place to stay
-            </p>
-            <p className="border-b-solid font-400 border-b-[1px] border-b-gray-300  p-[1.5rem] text-[1.8rem]">NFTs</p>
-            <p className="border-b-solid font-400 border-b-[1px] border-b-gray-300  p-[1.5rem] text-[1.8rem]">
-              Community
-            </p>
+        <div className="absolute top-0 w-[100%]">
+          <div className="absolute top-[50%] left-[50%] z-10 w-[20rem] translate-x-[-50%] translate-y-[50%]  overflow-hidden rounded-[1rem] border  border-red-800  bg-white">
+            <div>
+              <p>Connect Wallet</p>
+              <img src={close} alt="close" />
+            </div>
+            <div>
+              <p>choose your preferred wallet</p>
+              <div>
+                <img src={metamask} alt="metamask" />
+                <p>Metamask</p>
+                <img src={arrow} alt="arrow" />
+              </div>
+              <div>
+                <img src={walletconnect} alt="walletconnect" />
+                <p>WalletConnect</p>
+                <img src={arrow} alt="arrow" />
+              </div>
+            </div>
           </div>
           <div
-            onClick={setConnectWalletIsOpen(false)}
-            className="modal relative top-0 h-[100vh] w-[100%] border border-black  bg-black bg-opacity-20"
+            onClick={handleConnectWalletBtnClick}
+            className="modal absolute top-0 h-[100vh] w-[100%] border border-black  bg-black bg-opacity-20"
           ></div>
         </div>
       )}
