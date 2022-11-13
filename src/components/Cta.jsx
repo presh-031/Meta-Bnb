@@ -2,7 +2,7 @@ import ctaImage from "../assets/cta/ctaImage.svg";
 
 const Cta = () => {
   return (
-    <section className="bg-[#A02279] px-[2rem] py-[8rem] text-[#fff]">
+    <section className="bg-[#A02279] px-[2rem] py-[8rem] text-[#fff] xl:mt-[5.3rem]">
       <div>
         <p className="mb-[3.5rem] text-[4.8rem] font-bold leading-[5.995rem]">Metabnb NFTs</p>
         <p className="mb-[2rem] text-[1.8rem] font-normal leading-[3.5rem] ">

@@ -12,8 +12,8 @@ import CardsContainer from "../UI/CardsContainer";
 
 const Products = () => {
   return (
-    <div className="p-[2rem]  text-center">
-      <p className="my-[2rem]  text-[4.8rem] font-bold leading-[5.995rem] text-[#000]">
+    <div className="border-[5px]  border-red-800 p-[2rem] text-center xl:p-0">
+      <p className="my-[2rem] text-[4.8rem]  font-bold leading-[5.995rem] text-[#000] xl:my-[5.8rem]">
         Inspiration for your next adventure
       </p>
       <CardsContainer>
