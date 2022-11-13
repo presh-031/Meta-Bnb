@@ -29,7 +29,7 @@ const Header = () => {
   };
   return (
     <>
-      <header className="xl-shadow-none mb-[2.5rem] flex w-[100%] items-center justify-between bg-white px-[1rem] py-[2rem] shadow-md outline  xl:px-[10rem] xl:py-[4.3rem]">
+      <header className="xl-shadow-none mb-[2.5rem] flex w-[100%] items-center justify-between bg-white px-[1rem] py-[2rem] shadow-md   xl:px-[10rem] xl:py-[4.3rem]">
         <div className="flex items-end gap-[0.3rem] outline">
           <img src={homeLogo} alt="logo" className="h-[2.6rem] w-[3.199rem]" />
           <img src={logo} alt="logo" className="h-[2.2rem] w-[10.8rem]" />
