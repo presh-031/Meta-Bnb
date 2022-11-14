@@ -36,6 +36,7 @@ const Header = () => {
         </div>
         <ul className="hidden gap-[4.8rem] text-[1.2rem] outline sm:flex xl:text-[2rem]  xl:font-normal xl:leading-[2.498rem]">
           <li
+            className="cursor-pointer"
             onClick={() => {
               navigate("/");
             }}
@@ -43,14 +44,15 @@ const Header = () => {
             Home
           </li>
           <li
+            className="cursor-pointer"
             onClick={() => {
               navigate("/places");
             }}
           >
             Place to stay
           </li>
-          <li>NFTs</li>
-          <li>Community</li>
+          <li className="cursor-pointer">NFTs</li>
+          <li className="cursor-pointer">Community</li>
         </ul>
 
         <div className="flex items-center gap-[1rem] outline">

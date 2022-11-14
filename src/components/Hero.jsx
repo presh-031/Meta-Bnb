@@ -41,18 +41,18 @@ const Hero = () => {
         <div className="mx-[2rem] mt-[2rem] flex gap-[2rem] border-[5px] border-red-800 xl:mx-0 xl:gap-[.8rem]">
           <div className="mt-[4rem] flex flex-col gap-[2rem] xl:mt-[9.9rem] xl:gap-[.8rem] ">
             <div>
-              <img src={heroImg1} alt="nft" />
+              <img src={heroImg1} alt="nft" className="h-[17.6rem] w-[23.4rem]" />
             </div>
             <div>
-              <img src={heroImg2} alt="nft" />
+              <img src={heroImg2} alt="nft" className="h-[17.6rem] w-[23.4rem]" />
             </div>
           </div>
           <div className="flex flex-col gap-[2rem] outline xl:gap-[.8rem]">
             <div>
-              <img src={heroImg3} alt="nft" />
+              <img src={heroImg3} alt="nft" className="h-[17.6rem] w-[23.4rem]" />
             </div>
             <div>
-              <img src={heroImg4} alt="nft" />
+              <img src={heroImg4} alt="nft" className="h-[17.6rem] w-[23.4rem]" />
             </div>
           </div>
         </div>
