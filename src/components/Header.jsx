@@ -1,11 +1,12 @@
 import { HiOutlineMenu } from "react-icons/hi";
+import { CgClose } from "react-icons/cg";
 
 import logo from "../assets/logo.svg";
 import homeLogo from "../assets/home-logo.svg";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import close from "../assets/close.svg";
+// import close from "../assets/close.svg";
 import arrow from "../assets/arrow.svg";
 import metamask from "../assets/metamasklogo.svg";
 import walletconnect from "../assets/walletconnect.svg";
@@ -27,6 +28,16 @@ const Header = () => {
       return !prevConnectWalletIsOpen;
     });
   };
+
+  const handleEscKeyPress = () => {
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        setIsOpen(false);
+        setConnectWalletIsOpen(false);
+      }
+    });
+  };
+  handleEscKeyPress();
   return (
     <>
       <header className="xl-shadow-none mb-[2.5rem] flex w-[100%] items-center justify-between bg-white px-[1rem] py-[2rem] shadow-md   xl:px-[10rem] xl:py-[4.3rem]">
@@ -93,23 +104,21 @@ const Header = () => {
           </div>
           <div
             onClick={handleMenuClick}
-            className="modal absolute top-0 h-[100vh] w-[100%] bg-black bg-opacity-20 outline"
+            className="modalBg absolute top-0 h-[100vh] w-[100%] bg-black bg-opacity-20 outline"
           ></div>
         </div>
       )}
 
       {connectWalletIsOpen && (
-        <div className="absolute top-0 w-[100%]">
-          <div className="absolute top-[50%] left-[50%] z-10 w-[80%] translate-x-[-50%] translate-y-[50%] overflow-hidden  rounded-[1rem] bg-white">
+        <div className="modalBg fixed top-0 flex h-[100vh] w-[100vw] items-center justify-center border border-black  bg-black bg-opacity-20">
+          <div className="modal z-10 w-[80%] overflow-hidden rounded-[1rem]  bg-white outline">
             <div className="flex items-center justify-between border-b-[1px] border-b-[#cfd8dc] px-[2rem] py-[1.8rem] ">
               <p className="text-[2rem] font-bold leading-[2.998rem]">Connect Wallet</p>
-              <img
+              <CgClose
                 onClick={() => {
                   setConnectWalletIsOpen(false);
                 }}
                 className="h-[3.2rem] w-[3.2rem] cursor-pointer"
-                src={close}
-                alt="close"
               />
             </div>
             <div>
@@ -132,10 +141,6 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div
-            onClick={handleConnectWalletBtnClick}
-            className="modal absolute top-0 h-[100vh] w-[100%] border border-black  bg-black bg-opacity-20"
-          ></div>
         </div>
       )}
     </>
