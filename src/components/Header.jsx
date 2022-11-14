@@ -29,6 +29,12 @@ const Header = () => {
     });
   };
 
+  const handleModalBgClick = (e) => {
+    if (e.target === e.currentTarget) {
+      setConnectWalletIsOpen(false);
+    }
+  };
+
   const handleEscKeyPress = () => {
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
@@ -110,7 +116,10 @@ const Header = () => {
       )}
 
       {connectWalletIsOpen && (
-        <div className="modalBg fixed top-0 flex h-[100vh] w-[100vw] items-center justify-center border border-black  bg-black bg-opacity-20">
+        <div
+          onClick={handleModalBgClick}
+          className="modalBg fixed top-0 flex h-[100vh] w-[100vw] items-center justify-center border border-black  bg-black bg-opacity-20"
+        >
           <div className="modal z-10 w-[80%] overflow-hidden rounded-[1rem]  bg-white outline">
             <div className="flex items-center justify-between border-b-[1px] border-b-[#cfd8dc] px-[2rem] py-[1.8rem] ">
               <p className="text-[2rem] font-bold leading-[2.998rem]">Connect Wallet</p>
