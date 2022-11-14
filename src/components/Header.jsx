@@ -76,7 +76,7 @@ const Header = () => {
           <HiOutlineMenu className="cursor-pointer  sm:hidden" size={24} color="#434343" onClick={handleMenuClick} />
           <button
             onClick={handleConnectWalletBtnClick}
-            className="w-[8rem] rounded-[1rem] bg-[#A02279] py-2 text-[1.6rem] font-normal leading-[1.4rem] text-[#fff] outline xl:w-[17.7rem] xl:py-[1.5rem] xl:leading-[1.998rem]"
+            className="w-[8rem] rounded-[1rem] bg-[#A02279] py-2 text-[1.6rem] font-normal leading-[1.4rem] text-[#fff] outline md:w-[17.7rem] md:py-[1.5rem] md:leading-[1.998rem]"
           >
             Connect wallet
           </button>
@@ -109,7 +109,9 @@ const Header = () => {
             </p>
           </div>
           <div
-            onClick={handleMenuClick}
+            onClick={() => {
+              setIsOpen(false);
+            }}
             className="modalBg absolute top-0 h-[100vh] w-[100%] bg-black bg-opacity-20 outline"
           ></div>
         </div>
