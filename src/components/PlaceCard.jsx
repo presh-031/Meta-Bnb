@@ -3,7 +3,11 @@ import star from "../assets/star.svg";
 
 const PlaceCard = ({ product }) => {
   return (
-    <div className="mx-auto h-[37.2rem] w-[29.2rem] rounded-[1.5rem] border-[1px] border-[#D7D7D7] p-[1.6rem]">
+    <div
+      className="mx-auto h-[37.2rem] 
+    w-[100%]
+     rounded-[1.5rem] border-[1px] border-[#D7D7D7] p-[1.6rem] "
+    >
       <div>
         <img src={product} alt="nft" className="h-[26.5rem] w-[26rem]" />
       </div>

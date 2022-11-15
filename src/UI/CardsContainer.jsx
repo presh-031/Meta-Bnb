@@ -1,6 +1,6 @@
 const CardsContainer = ({ children }) => {
   return (
-    <div className="mx-auto grid w-fit  grid-cols-1 gap-[2.4rem] outline min-[500px]:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:px-[10rem]">
+    <div className="mx-auto grid w-fit  grid-cols-1 gap-[2.4rem] min-[630px]:grid-cols-2 lg:grid-cols-3 min-[1200px]:grid-cols-4 ">
       {children}
     </div>
   );

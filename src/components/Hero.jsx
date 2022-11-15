@@ -9,7 +9,7 @@ import opensea from "../assets/opensea.svg";
 const Hero = () => {
   return (
     <>
-      <section className="  md:mx-[6.94%]  md:mt-[8.2rem] md:flex md:justify-between">
+      <section className="outline md:mx-[6.94%]  md:mt-[8.2rem] md:flex md:justify-between">
         <div className="mx-[5.33%] text-center   md:mx-0 md:w-[72%] md:text-left  lg:w-[52%]">
           <p className="mb-[3.8rem] break-words text-[4.6rem] font-normal leading-[6.84rem] text-[#434343]  xl:mb-[4.8rem] xl:text-[5.6rem] xl:leading-[7.84rem]">
             Rent a{" "}
@@ -29,7 +29,7 @@ const Hero = () => {
           <div className="xl:flex xl:h-[5.4rem] xl:overflow-hidden xl:rounded-[.8rem]">
             <input
               type="text"
-              className=" mb-[1rem] block h-[4.90rem] w-[100%] rounded-[0.80rem] border-[1px] border-solid border-[#A3A3A3]  px-[1.5rem] text-[1.4rem] font-normal leading-[1.82rem] placeholder:text-[#B8B8B8] xl:mb-0 xl:h-[100%] xl:rounded-none xl:border-r-0"
+              className=" mb-[1rem] block h-[4.90rem] w-[100%] rounded-[0.80rem] border-[1px] border-solid border-[#A3A3A3] px-[1.5rem]  text-[1.4rem] font-normal leading-[1.82rem] placeholder:text-[#B8B8B8] xl:mb-0 xl:h-[100%] xl:rounded-r-none  xl:border-r-0"
               placeholder="Search for location"
             />
             <button className="h-[4.90rem] rounded-[0.8rem] bg-[#A02279] px-[6.97rem] text-[1.6rem] font-normal leading-[1.93rem] text-[#fff] xl:h-[100%] xl:rounded-none xl:px-[8.5rem] xl:text-[1.6rem] xl:leading-[1.92rem] ">

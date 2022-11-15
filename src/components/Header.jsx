@@ -124,7 +124,7 @@ const Header = () => {
           onClick={handleModalBgClick}
           className="modalBg fixed top-0 flex h-[100vh] w-[100vw] items-center justify-center border border-black  bg-black bg-opacity-20"
         >
-          <div className="modal z-10 w-[80%] overflow-hidden rounded-[1.4rem] bg-white   md:w-[41.67%]">
+          <div className="modal z-10 w-[80%] max-w-[80rem] overflow-hidden rounded-[1.4rem]   bg-white md:w-[41.67%]">
             <div className="flex items-center justify-between border-b-[1px] border-b-[#cfd8dc] px-[2rem] py-[1.8rem] xl:px-[3.2rem] xl:py-[2.4rem] ">
               <p className="text-[2rem] font-bold leading-[2.998rem] text-[#333333] xl:text-[2.4rem]">Connect Wallet</p>
               <CgClose
