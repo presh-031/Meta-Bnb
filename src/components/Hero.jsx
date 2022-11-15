@@ -11,7 +11,7 @@ const Hero = () => {
     <>
       <section className="outline  md:mx-[6.94%]  md:mt-[8.2rem] md:flex md:justify-between">
         <div className="mx-[5.33%] text-center outline  md:mx-0 md:w-[72%] md:text-left  lg:w-[52%]">
-          <p className="mb-[3.8rem] text-[4.6rem] font-normal leading-[6.84rem] text-[#434343]  xl:mb-[4.8rem] xl:text-[5.6rem] xl:leading-[7.84rem]">
+          <p className="mb-[3.8rem] break-words text-[4.6rem] font-normal leading-[6.84rem] text-[#434343]  xl:mb-[4.8rem] xl:text-[5.6rem] xl:leading-[7.84rem]">
             Rent a{" "}
             <span
               className="font-bold text-[#A02279]

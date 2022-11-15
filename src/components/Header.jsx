@@ -46,7 +46,8 @@ const Header = () => {
   handleEscKeyPress();
   return (
     <>
-      <header className="xl-shadow-none mb-[2.5rem] flex w-[100%] items-center justify-between bg-white px-[1rem] py-[2rem] shadow-md   xl:px-[10rem] xl:py-[4.3rem]">
+      {/* check the queries for very small device widths */}
+      <header className="xl-shadow-none mb-[2.5rem] flex  w-[100%] items-center justify-between bg-white px-[1rem] py-[2rem] shadow-md max-[280px]:flex-col max-[280px]:gap-[1rem] xl:px-[10rem] xl:py-[4.3rem]">
         <div className="flex items-end gap-[0.3rem] outline">
           <img src={homeLogo} alt="logo" className="h-[2.6rem] w-[3.199rem]" />
           <img src={logo} alt="logo" className="h-[2.2rem] w-[10.8rem]" />
