@@ -5,7 +5,7 @@ import Header from "../components/Header";
 
 const PlacesToStay = () => {
   return (
-    <div className="pt-[13.4rem] ">
+    <div className="mx-auto max-w-[1440px] pt-[13.4rem] ">
       <FilterArea />
       <AvailablePlaces />
     </div>
