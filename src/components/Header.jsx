@@ -47,7 +47,7 @@ const Header = () => {
   return (
     <>
       {/* check the queries for very small device widths */}
-      <header className="xl-shadow-none mb-[2.5rem] flex  w-[100%] items-center justify-between bg-white px-[1rem] py-[2rem] shadow-md max-[280px]:flex-col max-[280px]:gap-[1rem] xl:px-[10rem] xl:py-[4.3rem]">
+      <header className="xl-shadow-none mx-auto mb-[2.5rem] flex w-[100%]  max-w-[1440px] items-center justify-between bg-white px-[1rem] py-[2rem] shadow-md max-[280px]:flex-col max-[280px]:gap-[1rem] xl:px-[10rem] xl:py-[4.3rem]">
         <div className="flex items-end gap-[0.3rem] outline">
           <img src={homeLogo} alt="logo" className="h-[2.6rem] w-[3.199rem]" />
           <img src={logo} alt="logo" className="h-[2.2rem] w-[10.8rem]" />
@@ -123,31 +123,31 @@ const Header = () => {
           onClick={handleModalBgClick}
           className="modalBg fixed top-0 flex h-[100vh] w-[100vw] items-center justify-center border border-black  bg-black bg-opacity-20"
         >
-          <div className="modal z-10 w-[80%] overflow-hidden rounded-[1rem]  bg-white outline">
-            <div className="flex items-center justify-between border-b-[1px] border-b-[#cfd8dc] px-[2rem] py-[1.8rem] ">
-              <p className="text-[2rem] font-bold leading-[2.998rem]">Connect Wallet</p>
+          <div className="modal z-10 w-[80%] overflow-hidden rounded-[1.4rem] bg-white  outline md:w-[41.67%]">
+            <div className="flex items-center justify-between border-b-[1px] border-b-[#cfd8dc] px-[2rem] py-[1.8rem] xl:px-[3.2rem] xl:py-[2.4rem] ">
+              <p className="text-[2rem] font-bold leading-[2.998rem] text-[#333333] xl:text-[2.4rem]">Connect Wallet</p>
               <CgClose
                 onClick={() => {
                   setConnectWalletIsOpen(false);
                 }}
-                className="h-[3.2rem] w-[3.2rem] cursor-pointer"
+                className="h-[3.2rem] w-[3.2rem] cursor-pointer xl:w-[6]"
               />
             </div>
             <div>
-              <p className="mx-[2rem] mt-[2rem] mb-[1.8rem] text-[1.6rem] leading-[1.998rem] text-[#333333]">
+              <p className="mx-[2rem] mt-[2rem] mb-[1.8rem] text-[1.6rem] leading-[1.998rem] text-[#333333] xl:mx-[3.2rem] xl:mt-[3.2rem] xl:mb-[1.6rem]">
                 Choose your preferred wallet
               </p>
-              <div className="mx-[2rem] flex cursor-pointer items-center justify-between rounded-[1.2rem] border-[1px] border-[#cfd8dc] bg-[#F8F9FA] p-[1.2rem]">
+              <div className="mx-[2rem] my-[1.6rem] flex cursor-pointer items-center justify-between rounded-[1.2rem] border-[1px] border-[#cfd8dc] bg-[#F8F9FA] p-[1.2rem] xl:mx-[3.2rem] xl:py-[1.2rem] xl:px-[2rem]">
                 <div className="flex items-center gap-[1.6rem]">
-                  <img src={metamask} alt="metamask" className="w-[1.8rem]" />
-                  <p className="font-sora text-[1.80rem] font-semibold ">Metamask</p>
+                  <img src={metamask} alt="metamask" className="w-[1.8rem] xl:h-[4.4rem] xl:w-[4.4rem]" />
+                  <p className="font-sora text-[1.80rem] font-semibold  leading-[2.268rem]">Metamask</p>
                 </div>
                 <img src={arrow} alt="arrow" />
               </div>
-              <div className="mx-[2rem] mt-[1.6rem] mb-[3.2rem] flex cursor-pointer items-center  justify-between rounded-[1.2rem] border-[1px] border-[#cfd8dc] bg-[#F8F9FA] p-[1.2rem]">
+              <div className="mx-[2rem] mt-[1.6rem] mb-[2rem] flex cursor-pointer items-center justify-between rounded-[1.2rem] border-[1px] border-[#cfd8dc] bg-[#F8F9FA] p-[1.2rem] xl:mx-[3.2rem] xl:py-[1.2rem] xl:px-[2rem]">
                 <div className="flex items-center gap-[1.6rem]">
                   <img src={walletconnect} alt="walletconnect" className="w-[1.8rem]" />
-                  <p className="font-sora text-[1.80rem] font-semibold ">WalletConnect</p>
+                  <p className="font-sora text-[1.80rem] font-semibold leading-[2.268rem] ">WalletConnect</p>
                 </div>
                 <img src={arrow} alt="arrow" />
               </div>

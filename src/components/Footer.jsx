@@ -5,10 +5,10 @@ import twitter from "../assets/footer/twitter.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1D1D1E] px-[5.33%] pt-[6.3rem] pb-[3.7rem] text-[1.4rem] font-normal leading-[3.5rem] text-[#F1F3F9] sm:flex  sm:justify-between sm:px-[8.3%] sm:pt-[6.3rem] sm:pb-[3.7rem]">
+    <footer className="mx-auto max-w-[1440px] bg-[#1D1D1E] px-[5.33%] pt-[6.3rem] pb-[3.7rem] text-[1.4rem] font-normal leading-[3.5rem] text-[#F1F3F9] sm:flex  sm:justify-between sm:px-[8.3%] sm:pt-[6.3rem] sm:pb-[3.7rem]">
       <div className="outline">
         <div className="mb-[9.6rem] outline">
-          <img className="h-[3rem] w-[15rem] sm:h-[4rem] sm:w-[23.3rem]" src={logoWhite} alt="logo" />
+          <img className="h-[3rem]  w-[15rem] sm:h-[4rem] sm:w-[23.3rem]" src={logoWhite} alt="logo" />
         </div>
         <div className="mt-[5.5rem] mb-[5.90rem] flex gap-[8.0%] outline sm:mt-0 ">
           <img src={fb} alt="facebook" />
