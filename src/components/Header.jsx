@@ -46,13 +46,12 @@ const Header = () => {
   handleEscKeyPress();
   return (
     <>
-      {/* check the queries for very small device widths */}
-      <header className="xl-shadow-none mx-auto mb-[2.5rem] flex w-[100%]  max-w-[1440px] items-center justify-between bg-white px-[1rem] py-[2rem] shadow-md max-[280px]:flex-col max-[280px]:gap-[1rem] xl:px-[10rem] xl:py-[4.3rem]">
-        <div className="flex items-end gap-[0.3rem] outline">
+      <header className="mx-auto mb-[2.5rem] flex w-[100%] max-w-[1440px]  items-center justify-between bg-white px-[1rem] py-[2rem] shadow-md max-[280px]:flex-col max-[280px]:gap-[1rem] sm:shadow-none xl:px-[6.94%] xl:py-[4.3rem]">
+        <div className="flex items-end gap-[0.3rem] ">
           <img src={homeLogo} alt="logo" className="h-[2.6rem] w-[3.199rem]" />
           <img src={logo} alt="logo" className="h-[2.2rem] w-[10.8rem]" />
         </div>
-        <ul className="hidden gap-[4.8rem] text-[1.2rem] outline sm:flex xl:text-[2rem]  xl:font-normal xl:leading-[2.498rem]">
+        <ul className="hidden gap-[4.8rem]  text-[1.2rem]  sm:flex xl:text-[2rem]  xl:font-normal xl:leading-[2.498rem]">
           <li
             className="cursor-pointer"
             onClick={() => {
@@ -73,11 +72,11 @@ const Header = () => {
           <li className="cursor-pointer">Community</li>
         </ul>
 
-        <div className="flex items-center gap-[1rem] outline">
+        <div className="flex items-center gap-[1rem] ">
           <HiOutlineMenu className="cursor-pointer  sm:hidden" size={24} color="#434343" onClick={handleMenuClick} />
           <button
             onClick={handleConnectWalletBtnClick}
-            className="w-[8rem] rounded-[1rem] bg-[#A02279] py-2 text-[1.6rem] font-normal leading-[1.4rem] text-[#fff] outline md:w-[17.7rem] md:py-[1.5rem] md:leading-[1.998rem]"
+            className="w-[8rem] rounded-[1rem] bg-[#A02279] py-2 text-[1.6rem] font-normal leading-[1.4rem] text-[#fff]  md:w-[17.7rem] md:py-[1.5rem] md:leading-[1.998rem]"
           >
             Connect wallet
           </button>
@@ -91,7 +90,7 @@ const Header = () => {
                 navigate("/");
                 setIsOpen(false);
               }}
-              className="border-b-solid font-400 border-b-[1px] border-b-gray-300  p-[1.5rem] text-[1.8rem]"
+              className="border-b-solid font-400 cursor-pointer border-b-[1px] border-b-gray-300  p-[1.5rem] text-[1.8rem]"
             >
               Home
             </p>
@@ -100,12 +99,14 @@ const Header = () => {
                 navigate("/places");
                 setIsOpen(false);
               }}
-              className="border-b-solid font-400 border-b-[1px] border-b-gray-300 p-[1.5rem]  text-[1.8rem]"
+              className="border-b-solid font-400 cursor-pointer border-b-[1px] border-b-gray-300 p-[1.5rem]  text-[1.8rem]"
             >
               Place to stay
             </p>
-            <p className="border-b-solid font-400 border-b-[1px] border-b-gray-300  p-[1.5rem] text-[1.8rem]">NFTs</p>
-            <p className="border-b-solid font-400 border-b-[1px] border-b-gray-300  p-[1.5rem] text-[1.8rem]">
+            <p className="border-b-solid font-400 cursor-pointer border-b-[1px] border-b-gray-300  p-[1.5rem] text-[1.8rem]">
+              NFTs
+            </p>
+            <p className="border-b-solid font-400 cursor-pointer border-b-[1px] border-b-gray-300  p-[1.5rem] text-[1.8rem]">
               Community
             </p>
           </div>
@@ -113,7 +114,7 @@ const Header = () => {
             onClick={() => {
               setIsOpen(false);
             }}
-            className="modalBg absolute top-0 h-[100vh] w-[100%] bg-black bg-opacity-20 outline"
+            className="modalBg absolute top-0 h-[100vh] w-[100%] bg-black bg-opacity-20 "
           ></div>
         </div>
       )}
@@ -123,7 +124,7 @@ const Header = () => {
           onClick={handleModalBgClick}
           className="modalBg fixed top-0 flex h-[100vh] w-[100vw] items-center justify-center border border-black  bg-black bg-opacity-20"
         >
-          <div className="modal z-10 w-[80%] overflow-hidden rounded-[1.4rem] bg-white  outline md:w-[41.67%]">
+          <div className="modal z-10 w-[80%] overflow-hidden rounded-[1.4rem] bg-white   md:w-[41.67%]">
             <div className="flex items-center justify-between border-b-[1px] border-b-[#cfd8dc] px-[2rem] py-[1.8rem] xl:px-[3.2rem] xl:py-[2.4rem] ">
               <p className="text-[2rem] font-bold leading-[2.998rem] text-[#333333] xl:text-[2.4rem]">Connect Wallet</p>
               <CgClose

@@ -9,8 +9,8 @@ import opensea from "../assets/opensea.svg";
 const Hero = () => {
   return (
     <>
-      <section className="outline  md:mx-[6.94%]  md:mt-[8.2rem] md:flex md:justify-between">
-        <div className="mx-[5.33%] text-center outline  md:mx-0 md:w-[72%] md:text-left  lg:w-[52%]">
+      <section className="  md:mx-[6.94%]  md:mt-[8.2rem] md:flex md:justify-between">
+        <div className="mx-[5.33%] text-center   md:mx-0 md:w-[72%] md:text-left  lg:w-[52%]">
           <p className="mb-[3.8rem] break-words text-[4.6rem] font-normal leading-[6.84rem] text-[#434343]  xl:mb-[4.8rem] xl:text-[5.6rem] xl:leading-[7.84rem]">
             Rent a{" "}
             <span
@@ -37,7 +37,7 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div className="mx-[5.33%] mt-[2rem] flex max-w-[48.4rem]  justify-between gap-x-[.80rem] border-[1px] border-red-800 min-[540px]:mx-auto md:mt-0 xl:mx-0">
+        <div className="mx-[5.33%] mt-[2rem] flex max-w-[48.4rem]  justify-between gap-x-[.80rem]  min-[540px]:mx-auto md:mt-0 xl:mx-0">
           <div className="mt-[4rem] flex flex-col gap-[.8rem]  xl:mt-[9.9rem] ">
             <div className="">
               <img src={heroImg1} alt="nft" className="" />
