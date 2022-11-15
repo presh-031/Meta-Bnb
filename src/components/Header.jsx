@@ -46,7 +46,7 @@ const Header = () => {
   handleEscKeyPress();
   return (
     <>
-      <header className="mx-auto mb-[2.5rem] flex w-[100%] max-w-[1440px]  items-center justify-between bg-white px-[1rem] py-[2rem] shadow-md max-[280px]:flex-col max-[280px]:gap-[1rem] sm:shadow-none xl:px-[6.94%] xl:py-[4.3rem]">
+      <header className="mx-auto mb-[2.5rem] flex w-[100%] max-w-[1440px] items-center  justify-between bg-white px-[1rem] py-[2rem] shadow-md outline max-[280px]:flex-col max-[280px]:gap-[1rem] sm:shadow-none xl:px-[6.94%] xl:py-[4.3rem]">
         <div className="flex items-end gap-[0.3rem] ">
           <img src={homeLogo} alt="logo" className="h-[2.6rem] w-[3.199rem]" />
           <img src={logo} alt="logo" className="h-[2.2rem] w-[10.8rem]" />

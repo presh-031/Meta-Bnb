@@ -2,7 +2,7 @@ import location from "../assets/location.svg";
 
 const FilterArea = () => {
   return (
-    <div className="flex h-[3.8rem]  items-center px-[2rem] xl:mt-[2.9rem] xl:h-[4.8rem] xl:pl-[10rem] xl:pr-[16.3rem] ">
+    <div className="flex h-[3.8rem] items-center px-[2rem] outline xl:mt-[2.9rem] xl:h-[4.8rem] xl:pl-[10rem] xl:pr-[16.3rem] ">
       <ul className="flex flex-1 items-center  gap-[4.8rem] overflow-auto whitespace-nowrap text-[1.4rem] font-normal leading-[2.498rem] text-[#434343] scrollbar-hide xl:text-[2rem]">
         <li>Resturant</li>
         <li>Cottage</li>
