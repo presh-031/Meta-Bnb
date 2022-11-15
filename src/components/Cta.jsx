@@ -2,7 +2,7 @@ import ctaImage from "../assets/cta/ctaImage.svg";
 
 const Cta = () => {
   return (
-    <section className="bg-[#A02279] px-[2rem] py-[8rem] text-[#fff] xl:mt-[5.3rem] xl:flex xl:justify-between xl:p-[10rem]">
+    <section className="bg-[#A02279] px-[5.33%] py-[8rem] text-[#fff] xl:mt-[5.3rem] xl:flex xl:justify-between xl:px-[6.94%] xl:py-[10rem]">
       <div className="outline xl:mt-[8.6rem] xl:w-[41.5rem]">
         <p className="mb-[3.5rem] text-[4.8rem] font-bold leading-[5.995rem]">Metabnb NFTs</p>
         <p className="mb-[2rem] text-[1.8rem] font-normal leading-[3.5rem] xl:mb-[5.75rem] ">
@@ -13,8 +13,8 @@ const Cta = () => {
           Learn more
         </button>
       </div>
-      <div className="mt-[6rem] xl:mt-0">
-        <img src={ctaImage} alt="cta-img" />
+      <div className="mt-[6rem] outline xl:mt-0">
+        <img src={ctaImage} alt="cta-img" className="mx-auto outline" />
       </div>
     </section>
   );
